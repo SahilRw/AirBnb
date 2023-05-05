@@ -15,13 +15,13 @@ function App() {
     )
   })
   return (
-    <div className='bg-black text-white border-2 border-white'>
+    <>
       <Navbar />
       <Hero />
       <section className='flex gap-5 overflow-x-auto flex-nowrap justify-center'>
         {cards}
       </section>
-    </div>
+    </>
   );
 }
 
