@@ -9,7 +9,7 @@ const Card = (props) => {
     }
   return (
     <div className='w-44 text-xs flex flex-col flex-none relative'>
-      {badgeText && <div className='absolute top-1 left-1 py-1.5 px-2 bg-white rounded font-bold'>{badgeText}</div>}
+      {badgeText && <div className='absolute top-1 left-1 py-1.5 px-2 bg-white rounded text-black font-bold'>{badgeText}</div>}
       <img src={props.item.coverImg} alt="card" className='w-full rounded-xl mb-2.5'/>
       <div className='flex items-center'>
         <img src="star.png" alt="star" className='h-3.5' />
