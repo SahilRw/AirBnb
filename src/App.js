@@ -2,16 +2,25 @@ import './App.css';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Card from './components/Card';
+import data from './data';
+console.log(data)
 
 function App() {
+  const cards = data.map(item => {
+    return (
+      <Card
+        key={item.id} 
+        item={item}    
+      />
+    )
+  })
   return (
-    // <h1 className="text-3xl font-bold underline bg-red-400">
-    //   Hello world!
-    // </h1>
     <>
       <Navbar />
       <Hero />
-      <Card />
+      <section className='flex gap-5 overflow-x-auto flex-nowrap justify-center'>
+        {cards}
+      </section>
     </>
   );
 }
