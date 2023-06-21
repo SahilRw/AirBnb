@@ -1,5 +1,6 @@
 AirBnb Homepage(sample)
 
+THis list below is used for this and that.
 
 <h2>What I learned</h2>
 <ul>
